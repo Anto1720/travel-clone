@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gabarito", sans-serif;
+}
+
+body {
+  background: #fff;
+  color:#143c24;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+.menu{
+  display: none;
+}
+.nav-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #143c24;
+}
+
+.nav-left img {
+  height: 28px;
+}
+
+.nav-center a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #143c24;
+ 
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-right button {
+  background: #143c24;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* TABBARS*/
+.tabbars {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.tabbars h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 52px;
+  margin-bottom: 24px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tabs span {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+ .tabs .active { 
+  border-bottom: 2px solid #143c24;
+ }
+
+.tabs span:hover{
+   border-bottom: 2px solid #143c24;
+
+}
+
+/* SEARCH BAR */
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 650px;
+  margin: auto;
+  border: 2px solid #143c24;
+  border-radius: 30px;
+  padding: 10px 16px;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  background: #10eb64;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* PROMO */
+.promo {
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  gap: 30px;
+  background:#143c24 ;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.promo img {
+  width: 45%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.promo-text button {
+  margin-top: 14px;
+  padding: 10px 24px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* INTERESTS */
+.interests {
+  width: 85%;
+  margin: auto;
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.interest-card {
+  position: relative;
+}
+
+.interest-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.interest-card span {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: white;
+  font-weight: 700;
+}
+
+/* EXPERIENCES */
+.experiences {
+  width: 85%;
+  margin: 60px auto;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.experience-card {
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.experience-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.experience-card i {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: white;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.experience-card h3,
+.experience-card p {
+  padding: 10px 12px;
+}
+
+/* AD Section */
+
+.ad-container{
+    display: flex;
+    background: 0 10px 30px rgba(247,247,247,0.08);
+    border-radius: 12px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    
+    box-shadow: 0 10px 30px rgba(99, 98, 98,0.5);
+}
+.ad-image{
+    flex: 1;
+} 
+.ad-image img{
+    padding: 30px;
+   width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.ad-content{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.ad-brand{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    color: #143c24;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.ad-brand img{
+    width: 22px;
+    height: 22px;
+
+}
+
+.ad-content h6{
+    font-size: 16px;
+}
+
+.ad-content h2{
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #143c24;
+}
+
+.ad-content p{
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+
+}
+
+.donate-now{
+    display: inline-block;
+    background-color: #143c24;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+
+}
+.donate-now:hover{
+    background:#0dae4b ;
+}
+
+
+
+/* FOOTER */
+footer {
+  /* text-align: center; */
+  padding: 20px;
+  background: #f7f7f7;
+  margin: 45px;
+}
+footer span{ 
+  font-size: 16px;
+  color: #143c24;
+  
+}
+.footer-section span{
+  color: #555;
+  font-size: 16px;
+}
+.footer-section{
+display: flex;
+margin-top: 10px;
+gap: 40px;
+cursor: pointer;
+margin-bottom: 20px;
+
+}
+/* heart hover effects */
+
+.heart-fill{
+  display: none;
+  color: red;
+  transition: color 0.3s ease;
+}
+.experience-card:hover .heart-outline{
+ display: none;
+
+}
+.experience-card:hover .heart-fill{
+ display: inline;
+ transform: scale(1.4);
+
+}
+.footer__copy{
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .interest-grid,
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .promo {
+    flex-direction: column;
+  }
+
+  .promo img {
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .nav-center {
+    display: none;
+  }
+
+  .interest-grid,
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabbars h1 {
+    font-size: 38px;
+  }
+
+  .footer-section{
+    display: none;
+  }
+  .menu{
+    margin: 0px;
+    padding: 10px;
+    display: block;
+  }
+}
